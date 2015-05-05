@@ -28,8 +28,7 @@ gulp.task('scripts', function() {
 	return gulp.src([
 		'src/js/*.js', 
 		'node_modules/requirejs/require.js',
-		'node_modules/responsive-nav/responsive-nav.js'
-		])
+		'node_modules/responsive-nav/responsive-nav.js'])
 	.pipe(uglify())
 	.pipe(gulp.dest('assets/js'));
 });
@@ -37,14 +36,14 @@ gulp.task('scripts', function() {
 // compass SASS
 
 gulp.task('sass', function(){
-	return gulp.src('src/sass/styles.scss')
-	.pipe(sass({
+	return sass('src/sass/styles.scss', {
 		compass:true,
 		style:'compressed'
-	}))
-	.on('error', function (err) {console.log(err.message); })x
+	})
+	.on('error', function (err) {console.log(err.message); })
 	.pipe(gulp.dest('assets/css'))
-6
+});
+
 
 // Default task
 
