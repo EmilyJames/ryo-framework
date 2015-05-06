@@ -15,9 +15,9 @@ A clean slate for a SASS setup. Demonstrating some variables, nesting and mixins
 
 ## Instructions
 
-1. Navigate to your project, 'cd your/project/directory'.
-2. Run NPM, 'npm install'.
-3. Run Gulp, 'gulp'. Alternatively run 'gulp [task]'.
+1. Navigate to your project, `cd your/project/directory`.
+2. Run NPM, `npm install`.
+3. Run Gulp, `gulp`. Alternatively run `gulp [task]`.
 
 ## License
 
